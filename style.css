@@ -280,6 +280,7 @@ section{
     .home-content{
         width: 100%;
         padding-left: 0;
+        text-align:center;
     }
     .contact{
         flex-direction: column;
