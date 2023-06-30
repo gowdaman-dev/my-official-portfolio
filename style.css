@@ -12,10 +12,6 @@ html{
     width: 100vw;
     overflow-x: hidden;
 }
-#section , #home{
-    width: 100vw;
-    overflow-x:hidden ;
-}
 body{
     font-size: 20px;
     font-family: 'Space Grotesk' , sans-serif;
@@ -25,8 +21,6 @@ body{
 }
 
 .header{
-    top: 0;
-    right:  0;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -36,7 +30,10 @@ body{
     position: fixed;
     z-index: 100;
 }
-
+#section{
+    width: 100vw;
+    overflow-y: hidden;
+}
 .header nav{
     display: flex;
     gap: 2rem;
@@ -52,6 +49,8 @@ body{
 section{
     height: fit-content;
     padding: 3rem 4rem;
+    width: 100vw;
+    overflow-y: hidden;
 }
 .profile{
     position: absolute;
@@ -90,8 +89,6 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow-x: hidden;
-
 }
 .home-content h1 span{
     border-bottom: 1rem solid rgba(59, 255, 141, 0.709);
@@ -116,10 +113,7 @@ section{
     padding-bottom: .2rem;
     border-bottom: .2rem solid rgba(59, 255, 141, 0.612);
 }
-.skillblock{
-    width: 100vw;
-    overflow: hidden;
-}
+
 
 .heading{
     font-size: 5rem;
@@ -129,7 +123,6 @@ section{
     padding-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    overflow-x: hidden;
     gap: 4rem;
 }
 
@@ -146,7 +139,6 @@ section{
 .project{
     height: fit-content;
     width: 100vw;
-    overflow-x: hidden;
 }
 .project h1{
     margin-bottom: 3rem;
@@ -177,8 +169,6 @@ section{
     background-color: rgba(52, 52, 52, 0.6);
     display: flex;
     flex-wrap: wrap;
-    overflow-x: hidden;
-
 }
 .contact-content{
     width: 50%;
@@ -284,9 +274,6 @@ section{
     .skill .block h5{
         font-size: 2rem;
     }
-    .contact-content p{
-        padding-left: 0;
-    }
     .skill{
         padding-top: 2rem;
         display: grid;
@@ -299,17 +286,19 @@ section{
     .home-content{
         width: 100%;
         padding-left: 0;
+    }.skillblock{
+        text-align: c;
     }
     .contact{
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
     .contact-content p{
         padding-left: 0;
     }
     .contact-content,
     .form{
+        text-align: center;
         width: 100%;
     }
 }
@@ -322,6 +311,7 @@ section{
     }
     .contact{
         padding: 3rem  1rem;
+        text-align: center;
     }
     .contact-content p{
         padding-left: 1rem;
@@ -339,7 +329,7 @@ section{
     .profile{
         position: absolute;
         top: 0;
-        right:-1rem;
+        right:0rem;
         height: 90%;
     }
     .skill{
